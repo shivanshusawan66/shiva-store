@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <title>Ecommerce Website</title>
+  <script type="module" crossorigin src="/assets/addToCart-Dhzzo-QC.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/footer-CR3sAJYi.js">
+  <link rel="modulepreload" crossorigin href="/assets/showToast-CS_XP_8F.js">
+  <link rel="stylesheet" crossorigin href="/assets/footer-DqykBaHR.css">
+</head>
+
+<body>
+     <!-- ================================================
+                  Navbar Section                 
+  ================================================= -->
+
+  <header class="section-header">
+  </header>
+
+  <section class="addToCartElement">
+    <div class="container">
+        <section>
+            <div id="productCartContainer"></div>
+        </section>
+    </div>
+  </section>
+
+  <!-- ================================================
+                  template Product Section                 
+  ================================================= -->
+  <template id="productCartTemplate">
+    <div class="cards" id="cardValue">
+        <article class="information [ card ]">
+            <div>
+                <span class="category"></span>
+            </div>
+            <div class="imageContainer">
+                <img src="" alt="" class="productImage">
+            </div>
+
+            <h2 class="productName"></h2>
+
+            <p class="productPrice"></p>
+
+            <div class="stockElement">
+                <button class="cartIncrement">+</button>
+                <p class="productQuantity" data-quantity="1">1</p>
+                <button class="cartDecrement">-</button>
+            </div>
+
+            <button class="add-to-cart-button remove-to-cart-button">Remove</button>
+        </article>
+    </div>
+  </template>
+
+  
+  <section class="productCartTotalElem">
+    <div class="productCartTotalELement">
+        <p>Selected Offer Summary</p>
+        <div class="productOrderTotal">
+            <div>
+                <p>Sub Total : </p>
+                <p class="productSubTotal">0</p>
+            </div>
+            <div>
+                <p>Tax(5%):</p>
+                <p class="productTax">₹50</p>
+            </div>
+            <hr />
+
+            <div>
+                <p>Final Total : </p>
+                <p class="productFinalTotal">0</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+    <!-- ================================================
+                  Footer Section                 
+  ================================================= -->
+
+  <footer class="section-footer">
+  </footer>
+
+</body>
+
+</html>
